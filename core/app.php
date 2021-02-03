@@ -21,8 +21,6 @@ class App
             self::$self = new self();
         }
 
-        self::$self->class = $class;
-
         self::$self->setClass($class);
 
         return self::$self;
