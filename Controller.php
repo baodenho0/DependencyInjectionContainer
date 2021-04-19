@@ -1,15 +1,24 @@
 <?php
 
+require_once "Services\a\a1.php";
+
+use Services\a\a1;
+
 class Controller
 {
-    public function __construct()
-    {
+    private $a1;
 
+    public function __construct(
+        a1 $a1
+    ) {
+        $this->a1 = $a1;
     }
 
     public function index()
     {
-//        echo __METHOD__;
+        echo __METHOD__;
+
+        $this->a1->index();
     }
 
     public function test($a, $b, $c)

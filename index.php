@@ -5,7 +5,7 @@ const __ROOT__ = __DIR__.'\\';
 
 use Core\App;
 
-$app = App::make('Services\a\a1');
+$app = App::make('Controller');
 
 //echo $app->index();
 

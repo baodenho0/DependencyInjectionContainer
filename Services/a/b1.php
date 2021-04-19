@@ -2,15 +2,20 @@
 
 namespace Services\a;
 
-use Services\b\b1 as bb1;
+require_once "Services\a\a1.php";
+
+use Services\a\a1;
 
 class b1
 {
-    private $bb1;
+    private $a1;
 
-    public function __construct()
+    public function __construct(a1 $a1)
     {
+        echo __METHOD__;
+        $this->a1 = $a1;
 
+        $a1->callFromB1();
     }
 
     public function index()
